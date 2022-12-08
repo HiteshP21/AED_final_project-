@@ -67,7 +67,7 @@ public class DB4OUtil {
         else{
             system = systems.get(systems.size() - 1);
         }
-        conn.close();
+          conn.close();
         return system;
     }    
 }
