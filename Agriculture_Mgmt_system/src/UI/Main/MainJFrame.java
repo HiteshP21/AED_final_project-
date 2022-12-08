@@ -1,6 +1,8 @@
 
 package UI.Main;
 
+import Model.DB4OUtil.DB4OUtil;
+
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -10,7 +12,7 @@ import javax.swing.JPanel;
  * @author Hitesh
  */
 public class MainJFrame extends javax.swing.JFrame {
-
+    private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     
     public MainJFrame() {
         
