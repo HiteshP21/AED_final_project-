@@ -7,7 +7,7 @@ package Model.Emp;
 
 /**
  *
- * @author Kunal
+ * @author Hitesh
  */
 public class Emp {
     
