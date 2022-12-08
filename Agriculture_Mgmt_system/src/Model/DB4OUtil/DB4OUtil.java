@@ -1,4 +1,6 @@
 package Model.DB4OUtil;
+import Model.ConfigSystem;
+import Model.EcoSys;
 import com.db4o.Db4oEmbedded;
 import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;
@@ -47,4 +49,25 @@ public class DB4OUtil {
         }
         return null;
     }
+    
+    public synchronized void storeSystem(EcoSys system) {
+        ObjectContainer conn = createConnection();
+        conn.store(system);
+        conn.commit();
+        conn.close();
+    }
+    
+    public EcoSys retrieveSystem(){
+        ObjectContainer conn = createConnection();
+        ObjectSet<EcoSys> systems = conn.query(EcoSys.class); // Change to the object you want to save
+        EcoSys system;
+        if (systems.size() == 0){
+            system = ConfigSystem.configure();  // If there's no System in the record, create a new one
+        }
+        else{
+            system = systems.get(systems.size() - 1);
+        }
+        conn.close();
+        return system;
+    }    
 }
