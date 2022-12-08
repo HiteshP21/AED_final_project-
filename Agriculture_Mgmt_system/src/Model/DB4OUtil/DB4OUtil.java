@@ -12,7 +12,6 @@ import java.nio.file.Paths;
 
 
 
-//DB4O connection implementation
 public class DB4OUtil {
     
     
