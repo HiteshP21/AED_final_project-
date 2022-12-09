@@ -12,7 +12,6 @@ import java.nio.file.Paths;
 
 
 
-
 public class DB4OUtil {
     
     
@@ -49,6 +48,7 @@ public class DB4OUtil {
         }
         return null;
     }
+
     public synchronized void storeSystem(EcoSys system) {
         ObjectContainer conn = createConnection();
         conn.store(system);
@@ -66,7 +66,8 @@ public class DB4OUtil {
         else{
             system = systems.get(systems.size() - 1);
         }
-        conn.close();
+
+          conn.close(); //Closed connection
         return system;
-    }
+    }    
 }
