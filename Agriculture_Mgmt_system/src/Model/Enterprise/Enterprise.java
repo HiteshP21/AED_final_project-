@@ -12,6 +12,7 @@ import Model.Organization.OrganizationDir;
 /**
  *
  * @author shardul
+ * //create enterprise
  */
 public abstract class Enterprise extends Organization{
     
