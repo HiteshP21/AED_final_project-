@@ -23,6 +23,7 @@ data to be defined.
 data passed in the function.
 
 */
+//creating primary item
     //Declaring the getter setter for the variables
     public String getMakerName() {
         return makerName;
