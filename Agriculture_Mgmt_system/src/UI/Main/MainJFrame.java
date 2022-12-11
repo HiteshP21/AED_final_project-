@@ -131,13 +131,12 @@ public class MainJFrame extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(153, 255, 0));
         jLabel3.setText("Mixed Agriculture Management System");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 670, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/MainJFrame.jpg"))); // NOI18N
         jLabel4.setText("jLabel4");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 1120, 780));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1120, 880));
 
         container.add(jPanel1, "card2");
 
