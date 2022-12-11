@@ -73,7 +73,6 @@ data passed in the function.
 
         reqBtn.setBackground(new java.awt.Color(0, 255, 204));
         reqBtn.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        reqBtn.setForeground(new java.awt.Color(0, 0, 0));
         reqBtn.setText("Request Produce");
         reqBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,7 +82,6 @@ data passed in the function.
         add(reqBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, 230, -1));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Crop Name");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, 110, -1));
 
@@ -92,25 +90,22 @@ data passed in the function.
 
         bkBtn.setBackground(new java.awt.Color(0, 255, 204));
         bkBtn.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        bkBtn.setForeground(new java.awt.Color(0, 0, 0));
         bkBtn.setText("Back");
         bkBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bkBtnActionPerformed(evt);
             }
         });
-        add(bkBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 50));
+        add(bkBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 670, 100, 50));
 
         valLBL.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         add(valLBL, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 200, 30));
 
         entLbl.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        entLbl.setForeground(new java.awt.Color(0, 0, 0));
         entLbl.setText("Enterprise :");
         add(entLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 120, 30));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Crop Quantity");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, -1, -1));
 
@@ -131,12 +126,11 @@ data passed in the function.
         add(qtyJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, 229, -1));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Request Yield");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, 320, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMwallpaper2.JPG"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UICustRole.jpg"))); // NOI18N
         jLabel4.setAutoscrolls(true);
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 950, 810));
     }// </editor-fold>//GEN-END:initComponents
