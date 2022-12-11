@@ -64,7 +64,7 @@ data passed in the function.
                 btnMngNtwrkActionPerformed(evt);
             }
         });
-        add(btnMngNtwrk, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 330, -1));
+        add(btnMngNtwrk, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 330, 60));
 
         btnMngeEnterprise.setBackground(new java.awt.Color(153, 255, 153));
         btnMngeEnterprise.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -74,9 +74,9 @@ data passed in the function.
                 btnMngeEnterpriseActionPerformed(evt);
             }
         });
-        add(btnMngeEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 330, -1));
+        add(btnMngeEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, 330, 60));
 
-        btnMngeAdmin.setBackground(new java.awt.Color(153, 255, 153));
+        btnMngeAdmin.setBackground(new java.awt.Color(153, 51, 255));
         btnMngeAdmin.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         btnMngeAdmin.setText("Manage Enterprise Admin");
         btnMngeAdmin.addActionListener(new java.awt.event.ActionListener() {
@@ -84,14 +84,14 @@ data passed in the function.
                 btnMngeAdminActionPerformed(evt);
             }
         });
-        add(btnMngeAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 260, -1, -1));
+        add(btnMngeAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 330, 60));
 
         jLabel133.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel133.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel133.setText("System Administrator");
         add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, 600, 70));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMcorporate1.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UISystemAdminWorkArea.jpeg"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 800));
     }// </editor-fold>//GEN-END:initComponents
 
