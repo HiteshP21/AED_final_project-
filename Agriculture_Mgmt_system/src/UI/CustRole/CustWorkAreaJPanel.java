@@ -152,9 +152,8 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 620, 165));
 
-        reqTestJBtn.setBackground(new java.awt.Color(0, 255, 204));
+        reqTestJBtn.setBackground(new java.awt.Color(102, 255, 102));
         reqTestJBtn.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        reqTestJBtn.setForeground(new java.awt.Color(0, 0, 0));
         reqTestJBtn.setText("Request Yield");
         reqTestJBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,8 +163,8 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
         add(reqTestJBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 220, 60));
 
         enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(0, 0, 0));
         enterpriseLabel.setText("Enterprise :");
+        enterpriseLabel.setOpaque(true);
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 127, 30));
 
         valLbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -178,34 +177,32 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 480, 507, 70));
 
-        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Additional Reviews");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 480, 180, -1));
+        jLabel3.setOpaque(true);
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 480, 150, -1));
 
-        jLabel4.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Produce Shelf Life");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 440, 180, -1));
+        jLabel4.setOpaque(true);
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 440, 150, -1));
 
-        jLabel2.setBackground(new java.awt.Color(0, 255, 204));
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Produce Quality");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 180, -1));
+        jLabel2.setOpaque(true);
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 140, -1));
 
-        wertRadioButton.setBackground(new java.awt.Color(255, 255, 255));
+        wertRadioButton.setBackground(new java.awt.Color(102, 255, 102));
         wertRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        wertRadioButton.setForeground(new java.awt.Color(0, 0, 0));
         wertRadioButton.setText("Excellent");
         wertRadioButton.setEnabled(false);
         add(wertRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, -1, -1));
 
-        sleRDBTN.setBackground(new java.awt.Color(255, 255, 255));
+        sleRDBTN.setBackground(new java.awt.Color(102, 255, 102));
         sleRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        sleRDBTN.setForeground(new java.awt.Color(0, 0, 0));
         sleRDBTN.setText("Excellent");
         sleRDBTN.setEnabled(false);
         sleRDBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -215,16 +212,14 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(sleRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 440, -1, -1));
 
-        svgRDBTN.setBackground(new java.awt.Color(255, 255, 255));
+        svgRDBTN.setBackground(new java.awt.Color(102, 255, 102));
         svgRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        svgRDBTN.setForeground(new java.awt.Color(0, 0, 0));
         svgRDBTN.setText("Very Good");
         svgRDBTN.setEnabled(false);
         add(svgRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 440, -1, -1));
 
-        qvgRadioButton.setBackground(new java.awt.Color(255, 255, 255));
+        qvgRadioButton.setBackground(new java.awt.Color(102, 255, 102));
         qvgRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        qvgRadioButton.setForeground(new java.awt.Color(0, 0, 0));
         qvgRadioButton.setText("Very Good");
         qvgRadioButton.setEnabled(false);
         qvgRadioButton.addActionListener(new java.awt.event.ActionListener() {
@@ -236,56 +231,48 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Review Crop");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 350, 198, -1));
 
-        qgRDBTN.setBackground(new java.awt.Color(255, 255, 255));
+        qgRDBTN.setBackground(new java.awt.Color(102, 255, 102));
         qgRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        qgRDBTN.setForeground(new java.awt.Color(0, 0, 0));
         qgRDBTN.setText("Good");
         qgRDBTN.setEnabled(false);
         add(qgRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 400, -1, -1));
 
-        qaRDBTN.setBackground(new java.awt.Color(255, 255, 255));
+        qaRDBTN.setBackground(new java.awt.Color(102, 255, 102));
         qaRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        qaRDBTN.setForeground(new java.awt.Color(0, 0, 0));
         qaRDBTN.setText("Average");
         qaRDBTN.setEnabled(false);
         add(qaRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 400, -1, -1));
 
-        saRDBTN.setBackground(new java.awt.Color(255, 255, 255));
+        saRDBTN.setBackground(new java.awt.Color(102, 255, 102));
         saRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        saRDBTN.setForeground(new java.awt.Color(0, 0, 0));
         saRDBTN.setText("Average");
         saRDBTN.setEnabled(false);
         add(saRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 440, -1, -1));
 
-        sgRDBTN.setBackground(new java.awt.Color(255, 255, 255));
+        sgRDBTN.setBackground(new java.awt.Color(102, 255, 102));
         sgRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        sgRDBTN.setForeground(new java.awt.Color(0, 0, 0));
         sgRDBTN.setText("Good");
         sgRDBTN.setEnabled(false);
         add(sgRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 440, -1, -1));
 
-        spRDBTN.setBackground(new java.awt.Color(255, 255, 255));
+        spRDBTN.setBackground(new java.awt.Color(102, 255, 102));
         spRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        spRDBTN.setForeground(new java.awt.Color(0, 0, 0));
         spRDBTN.setText("Poor");
         spRDBTN.setEnabled(false);
         add(spRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 440, -1, -1));
 
-        qpRDBTN.setBackground(new java.awt.Color(255, 255, 255));
+        qpRDBTN.setBackground(new java.awt.Color(102, 255, 102));
         qpRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        qpRDBTN.setForeground(new java.awt.Color(0, 0, 0));
         qpRDBTN.setText("Poor");
         qpRDBTN.setEnabled(false);
         add(qpRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 400, -1, -1));
 
-        revBTN.setBackground(new java.awt.Color(0, 255, 204));
+        revBTN.setBackground(new java.awt.Color(102, 255, 102));
         revBTN.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        revBTN.setForeground(new java.awt.Color(0, 0, 0));
         revBTN.setText("Review Yield");
         revBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -294,9 +281,8 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(revBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 190, 60));
 
-        submitButton.setBackground(new java.awt.Color(51, 255, 204));
+        submitButton.setBackground(new java.awt.Color(102, 255, 102));
         submitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        submitButton.setForeground(new java.awt.Color(0, 0, 0));
         submitButton.setText("Submit");
         submitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -306,12 +292,11 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
         add(submitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 560, 160, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Customer ");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 334, -1));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMwallpaper2.JPG"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UICustRole.jpg"))); // NOI18N
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 1000, 800));
     }// </editor-fold>//GEN-END:initComponents
     private void checkCompletion() {
