@@ -139,7 +139,7 @@ public class ReqPrimaryItemJPanel extends javax.swing.JPanel {
         jLabel3.setText("Quantity");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 166, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMwallpaper1.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UISystemAdminWorkArea.jpeg"))); // NOI18N
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 1000, 810));
     }// </editor-fold>//GEN-END:initComponents
 

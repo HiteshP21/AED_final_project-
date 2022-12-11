@@ -92,8 +92,7 @@ public class DistributorWorkAreaJPanel extends javax.swing.JPanel {
 
         enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        enterpriseLabel.setOpaque(true);
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 127, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 127, 30));
 
         valLbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         add(valLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 208, 30));

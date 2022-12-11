@@ -166,7 +166,7 @@ data passed in the function.
         enterpriseTypeJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         add(enterpriseTypeJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(418, 420, 370, -1));
 
-        SBTJButton.setBackground(new java.awt.Color(255, 102, 102));
+        SBTJButton.setBackground(new java.awt.Color(153, 255, 153));
         SBTJButton.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         SBTJButton.setText("Submit");
         SBTJButton.addActionListener(new java.awt.event.ActionListener() {

@@ -68,10 +68,10 @@ data passed in the function.
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 204));
+        setBackground(new java.awt.Color(112, 61, 19));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        reqBtn.setBackground(new java.awt.Color(0, 255, 204));
+        reqBtn.setBackground(new java.awt.Color(112, 61, 19));
         reqBtn.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         reqBtn.setText("Request Produce");
         reqBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +88,6 @@ data passed in the function.
         msgTextFld.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         add(msgTextFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 229, -1));
 
-        bkBtn.setBackground(new java.awt.Color(0, 255, 204));
         bkBtn.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         bkBtn.setText("Back");
         bkBtn.addActionListener(new java.awt.event.ActionListener() {

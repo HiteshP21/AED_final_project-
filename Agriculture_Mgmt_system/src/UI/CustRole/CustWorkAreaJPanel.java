@@ -195,7 +195,7 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
         jLabel2.setOpaque(true);
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 150, -1));
 
-        wertRadioButton.setBackground(new java.awt.Color(255, 255, 255));
+        wertRadioButton.setBackground(new java.awt.Color(204, 102, 0));
         wertRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         wertRadioButton.setText("Excellent");
         wertRadioButton.setEnabled(false);
@@ -223,7 +223,7 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
         svgRDBTN.setEnabled(false);
         add(svgRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 440, -1, -1));
 
-        qvgRadioButton.setBackground(new java.awt.Color(255, 255, 255));
+        qvgRadioButton.setBackground(new java.awt.Color(204, 102, 0));
         qvgRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         qvgRadioButton.setText("Very Good");
         qvgRadioButton.setEnabled(false);
