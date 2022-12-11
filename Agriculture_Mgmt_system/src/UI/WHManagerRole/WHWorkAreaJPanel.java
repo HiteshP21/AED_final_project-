@@ -246,8 +246,8 @@ data passed in the function.
         jLabel332.setText("Yield Inventory");
         add(jLabel332, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMwallpaper2.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 1310));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UIWHManagerRole.jpg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-360, -120, 1450, 1310));
     }// </editor-fold>//GEN-END:initComponents
 
     private void associateJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_associateJButtonActionPerformed
