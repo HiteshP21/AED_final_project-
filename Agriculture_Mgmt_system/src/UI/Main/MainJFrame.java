@@ -47,7 +47,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         splitPane.setDividerLocation(200);
 
-        loginPanel.setBackground(new java.awt.Color(255, 153, 153));
+        loginPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setBackground(new java.awt.Color(255, 153, 255));
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -127,7 +127,7 @@ public class MainJFrame extends javax.swing.JFrame {
         container.setBackground(new java.awt.Color(255, 255, 204));
         container.setLayout(new java.awt.CardLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
@@ -135,7 +135,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel3.setText("Mixed Agriculture Management System");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 670, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hitesh\\Desktop\\sysamdin.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/MainJFrame.jpg"))); // NOI18N
         jLabel4.setText("jLabel4");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 1120, 780));
 
