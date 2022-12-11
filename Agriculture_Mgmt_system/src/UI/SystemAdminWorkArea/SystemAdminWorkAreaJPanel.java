@@ -76,7 +76,7 @@ data passed in the function.
         });
         add(btnMngeEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, 330, 60));
 
-        btnMngeAdmin.setBackground(new java.awt.Color(153, 51, 255));
+        btnMngeAdmin.setBackground(new java.awt.Color(153, 255, 153));
         btnMngeAdmin.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         btnMngeAdmin.setText("Manage Enterprise Admin");
         btnMngeAdmin.addActionListener(new java.awt.event.ActionListener() {
@@ -92,7 +92,7 @@ data passed in the function.
         add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, 600, 70));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UISystemAdminWorkArea.jpeg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 800));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMngeEnterpriseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMngeEnterpriseActionPerformed
