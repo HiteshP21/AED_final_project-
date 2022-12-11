@@ -214,8 +214,8 @@ public class FarmerWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 710, 96));
 
-        assignJButton.setBackground(new java.awt.Color(255, 102, 102));
         assignJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        assignJButton.setForeground(new java.awt.Color(0, 0, 255));
         assignJButton.setText("Assign to me");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -224,15 +224,15 @@ public class FarmerWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 90, 229, -1));
 
-        processJButton.setBackground(new java.awt.Color(255, 102, 102));
         processJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        processJButton.setForeground(new java.awt.Color(0, 0, 255));
         processJButton.setText("Process");
         processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, 229, 40));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, 229, 30));
 
         produceTable.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         produceTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -260,7 +260,7 @@ public class FarmerWorkAreaJPanel extends javax.swing.JPanel {
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel3.setText("Price");
         jLabel3.setOpaque(true);
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 124, 40));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 50, 30));
 
         cropNameTextField.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         add(cropNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 320, 150, -1));
@@ -304,8 +304,8 @@ public class FarmerWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 710, 90));
 
-        requestTestJButton.setBackground(new java.awt.Color(255, 102, 102));
         requestTestJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        requestTestJButton.setForeground(new java.awt.Color(0, 0, 255));
         requestTestJButton.setText("Request Raw Material");
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -314,18 +314,18 @@ public class FarmerWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 430, 230, -1));
 
-        weatherButton.setBackground(new java.awt.Color(0, 255, 51));
-        weatherButton.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        weatherButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        weatherButton.setForeground(new java.awt.Color(0, 0, 255));
         weatherButton.setText("Farmer Assistance");
         weatherButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 weatherButtonActionPerformed(evt);
             }
         });
-        add(weatherButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 310, 250, 40));
+        add(weatherButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 320, 250, 30));
 
-        addCropButton.setBackground(new java.awt.Color(255, 102, 102));
         addCropButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        addCropButton.setForeground(new java.awt.Color(0, 0, 255));
         addCropButton.setText("Add Produce");
         addCropButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -337,44 +337,45 @@ public class FarmerWorkAreaJPanel extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel4.setText("Review Supply");
         jLabel4.setOpaque(true);
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 540, -1, 30));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, -1, 20));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel5.setText("Supply Quality");
         jLabel5.setOpaque(true);
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 570, -1, 30));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 560, -1, 30));
 
-        qexRadioButton.setBackground(new java.awt.Color(204, 255, 255));
+        qexRadioButton.setBackground(new java.awt.Color(255, 255, 255));
         qexRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         qexRadioButton.setText("Excellent");
         qexRadioButton.setEnabled(false);
-        add(qexRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 590, -1, -1));
+        add(qexRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 610, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel6.setText("Supply Shelf Life");
         jLabel6.setOpaque(true);
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, -1, 30));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, -1, 30));
 
-        sleRadioButton.setBackground(new java.awt.Color(204, 255, 255));
+        sleRadioButton.setBackground(new java.awt.Color(255, 255, 255));
         sleRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         sleRadioButton.setText("Excellent");
         sleRadioButton.setEnabled(false);
         add(sleRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 560, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 255));
         jLabel7.setText("Additional Reviews");
         jLabel7.setOpaque(true);
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 630, 150, 30));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 730, 150, 30));
 
         additionalreviewsTextArea.setColumns(20);
         additionalreviewsTextArea.setRows(5);
         additionalreviewsTextArea.setEnabled(false);
         jScrollPane5.setViewportView(additionalreviewsTextArea);
 
-        add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 630, 550, 60));
+        add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 650, 550, 60));
 
-        submitButton.setBackground(new java.awt.Color(255, 102, 102));
         submitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        submitButton.setForeground(new java.awt.Color(0, 0, 255));
         submitButton.setText("Submit Review");
         submitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -383,13 +384,13 @@ public class FarmerWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(submitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 630, 232, -1));
 
-        svgRadioButton.setBackground(new java.awt.Color(204, 255, 255));
+        svgRadioButton.setBackground(new java.awt.Color(255, 255, 255));
         svgRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         svgRadioButton.setText("Very Good");
         svgRadioButton.setEnabled(false);
-        add(svgRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 590, -1, -1));
+        add(svgRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 610, -1, -1));
 
-        qvgRadioButton.setBackground(new java.awt.Color(204, 255, 255));
+        qvgRadioButton.setBackground(new java.awt.Color(255, 255, 255));
         qvgRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         qvgRadioButton.setText("Very Good");
         qvgRadioButton.setEnabled(false);
@@ -400,44 +401,44 @@ public class FarmerWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(qvgRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 560, -1, -1));
 
-        qgRadioButton.setBackground(new java.awt.Color(204, 255, 255));
+        qgRadioButton.setBackground(new java.awt.Color(255, 255, 255));
         qgRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         qgRadioButton.setText("Good");
         qgRadioButton.setEnabled(false);
         add(qgRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 560, -1, -1));
 
-        sgRadioButton.setBackground(new java.awt.Color(204, 255, 255));
+        sgRadioButton.setBackground(new java.awt.Color(255, 255, 255));
         sgRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         sgRadioButton.setText("Good");
         sgRadioButton.setEnabled(false);
-        add(sgRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 590, -1, -1));
+        add(sgRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 610, -1, -1));
 
-        saRadioButton.setBackground(new java.awt.Color(204, 255, 255));
+        saRadioButton.setBackground(new java.awt.Color(255, 255, 255));
         saRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         saRadioButton.setText("Average");
         saRadioButton.setEnabled(false);
-        add(saRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 590, -1, -1));
+        add(saRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 610, -1, -1));
 
-        qaRadioButton.setBackground(new java.awt.Color(204, 255, 255));
+        qaRadioButton.setBackground(new java.awt.Color(255, 255, 255));
         qaRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         qaRadioButton.setText("Average");
         qaRadioButton.setEnabled(false);
         add(qaRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 560, -1, -1));
 
-        qpRadioButton.setBackground(new java.awt.Color(204, 255, 255));
+        qpRadioButton.setBackground(new java.awt.Color(255, 255, 255));
         qpRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         qpRadioButton.setText("Poor");
         qpRadioButton.setEnabled(false);
         add(qpRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 560, -1, -1));
 
-        spRadioButton.setBackground(new java.awt.Color(204, 255, 255));
+        spRadioButton.setBackground(new java.awt.Color(255, 255, 255));
         spRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         spRadioButton.setText("Poor");
         spRadioButton.setEnabled(false);
-        add(spRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 590, -1, -1));
+        add(spRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 610, -1, -1));
 
-        reviewSupplyButton.setBackground(new java.awt.Color(255, 102, 102));
         reviewSupplyButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        reviewSupplyButton.setForeground(new java.awt.Color(0, 0, 255));
         reviewSupplyButton.setText("Inspect Raw Material");
         reviewSupplyButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -467,6 +468,8 @@ public class FarmerWorkAreaJPanel extends javax.swing.JPanel {
         add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
 
         jLabel13.setBackground(new java.awt.Color(204, 255, 255));
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(0, 0, 255));
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UIAdministrativeRole.jpg"))); // NOI18N
         jLabel13.setOpaque(true);
         add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, -130, 2020, 1350));
