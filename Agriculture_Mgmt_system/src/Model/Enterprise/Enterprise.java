@@ -11,8 +11,7 @@ import Model.Organization.OrganizationDir;
 
 /**
  *
- * @author shardul
- * //create enterprise
+ * @author Hitesh
  */
 public abstract class Enterprise extends Organization{
     
@@ -34,7 +33,7 @@ data passed in the function.
 */
     //Declaring enumeration for two enterprises
     public enum EnterpriseType{
-        FoodDept("USFD"),Producer("Manufacturer");          
+        FoodDept("USFD"),Producer("Manufacturer"), SuperMart("Super Market");       
         
         private String value;
         

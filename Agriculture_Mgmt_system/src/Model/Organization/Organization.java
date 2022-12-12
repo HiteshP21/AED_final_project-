@@ -25,26 +25,67 @@ public abstract class Organization {
     private String name;
     private WorkQueue workQueue;
     private EmployeeDir employeeDirectory;
+    /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     private UserAccountDir userAccountDirectory;
+    /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     private int organizationID;
     private YieldDir produceDirectory;
     
     private static int counter=0;
     
+    /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     public enum Type{
         //Declaring the enumerations for all organisation
         Farmer("Farmer Organization"), Customer("Customer Organization"), Warehouse("Warehouse Organization"), 
         OfficeStaff("Staff Organization"),OfficeAdmin("Admin Organization"),
+        /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
         ManufacturerProducer("Production Organization"),ManufacturerWarehouse("Manufacturer Warehouse Organization"),
         ManufacturerSupplier("Supplier Organization"),ManufacturerAdmin("Admin Organization"),
         
-        Fisher("Fisher Organization"), FishProducer("Fish prod Organization"), FishSupplier("Fish sup Organization");
+        
+        SuperMartAdmin("SuperMarket Organization"), StoreManager("store Manager"), StorewarehouseManager("S warehouse manager");
         private String value;
+        /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
         private Type(String value) {
             this.value = value;
         }
@@ -52,9 +93,15 @@ public abstract class Organization {
             return value;
         }
     }
-    
-    
+/*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     public Organization(String name) {
         this.name = name;
         workQueue = new WorkQueue();
