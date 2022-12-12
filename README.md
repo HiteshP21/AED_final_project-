@@ -7,4 +7,9 @@ Our project will help such farmers by provisioning them with
 - raw materials
 - sending their crops to StoreMarkets and manufacturers
 - Getting an insight on Yield demand using a bar and line graph
+
+Class Diagram
 ![image](ClassDiagram.jpeg)
+
+Sequence Diagram
+![image](SeqDiag.jpeg)
