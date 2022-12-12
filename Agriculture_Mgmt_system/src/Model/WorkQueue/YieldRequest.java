@@ -16,6 +16,14 @@ public class YieldRequest extends WorkRequest{
     public void setTestingOutput(String testingOutput) {
         this.testingOutput = testingOutput;
     }
+    /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     
 }

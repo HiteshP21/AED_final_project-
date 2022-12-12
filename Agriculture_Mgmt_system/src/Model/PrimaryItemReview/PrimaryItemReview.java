@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Model.PrimaryItemReview;
 
@@ -10,6 +11,7 @@ package Model.PrimaryItemReview;
  */
 public class PrimaryItemReview {
     
+   
     private String stockName;
     private String yieldQlty;
     private String yieldStorageLife;
@@ -86,5 +88,4 @@ data passed in the function.
         return stockName;
         
     }
-    
 }

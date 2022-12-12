@@ -10,9 +10,18 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Hitesh
+ * @author shardul
  */
 public class EmployeeDir {
+    /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     
     private ArrayList<Emp> employeeList;           //Declaring array list of employees
 
@@ -26,7 +35,15 @@ public class EmployeeDir {
     
     public Emp createEmp(String name){
         Emp employee = new Emp();
+        /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
         if(checkIfUniqueEmployee(name))
         {
             employee.setName(name);
@@ -46,6 +63,15 @@ public class EmployeeDir {
                 flag = true;        
         }      
         
+        /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
         return flag;
     }
     

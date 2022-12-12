@@ -18,6 +18,17 @@ public class AdministerNetworkJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private EcoSys system;
 
+       /**
+     * 
+     * /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     public AdministerNetworkJPanel(JPanel userProcessContainer, EcoSys system) {
         initComponents();
 
@@ -92,10 +103,9 @@ public class AdministerNetworkJPanel extends javax.swing.JPanel {
 
         jLabel133.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel133.setText("Network Name");
-        jLabel133.setOpaque(true);
-        add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 380, 120, -1));
+        add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, 190, -1));
 
-        SBTJButton.setBackground(new java.awt.Color(153, 255, 153));
+        SBTJButton.setBackground(new java.awt.Color(255, 102, 102));
         SBTJButton.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         SBTJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMsubmit.png"))); // NOI18N
         SBTJButton.setText("Submit");
@@ -117,7 +127,7 @@ public class AdministerNetworkJPanel extends javax.swing.JPanel {
                 bkJButtonActionPerformed(evt);
             }
         });
-        add(bkJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 690, 140, 50));
+        add(bkJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 50));
 
         jLabel244.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel244.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -125,10 +135,20 @@ public class AdministerNetworkJPanel extends javax.swing.JPanel {
         jLabel244.setText("Manage Networks");
         add(jLabel244, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 370, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UISystemAdminWorkArea.jpeg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMcorporate1.jpg"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 800));
     }// </editor-fold>//GEN-END:initComponents
+   /**
+     * 
+     * /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     private void SBTJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SBTJButtonActionPerformed
         if (nametext.getText().equals(""))
         {
@@ -152,7 +172,17 @@ public class AdministerNetworkJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_bkJButtonActionPerformed
 
+       /**
+     * 
+     * /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton SBTJButton;

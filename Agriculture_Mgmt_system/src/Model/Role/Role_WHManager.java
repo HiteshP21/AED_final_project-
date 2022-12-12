@@ -15,7 +15,7 @@ import UI.WHManagerRole.WHWorkAreaJPanel;
 
 /**
  *
- * @author shardul
+ * @author Hitesh
  */
 public class Role_WHManager extends Role {
     @Override

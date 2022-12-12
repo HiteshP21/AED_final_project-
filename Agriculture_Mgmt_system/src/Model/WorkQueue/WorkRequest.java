@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Model.WorkQueue;
 
@@ -16,17 +17,39 @@ public class WorkRequest {
     private String message;
     private UserAccount sender;
     private UserAccount receiver;
-    
-    
+    /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     private String status;
     private Date requestDate;
     
-    
+    /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     private Date resolveDate;
     private int harvestQty;
     
-    
-    
+    /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     private int primItemQty;
 
     public int getPrimItemQty() {
@@ -51,10 +74,17 @@ public class WorkRequest {
 
     public String getMessage() {
         return message;
-    }    
-    
-    
-    
+    }
+    /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
+
     public void setMessage(String message) {
         this.message = message;
     }
@@ -62,17 +92,31 @@ public class WorkRequest {
     public UserAccount getSender() {
         return sender;
     }
-    
-    
-        public void setSender(UserAccount sender) {
+/*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
+    public void setSender(UserAccount sender) {
         this.sender = sender;
     }
 
     public UserAccount getReceiver() {
         return receiver;
     }
-    
+/*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     public void setReceiver(UserAccount receiver) {
         this.receiver = receiver;
     }
@@ -80,8 +124,15 @@ public class WorkRequest {
     public String getStatus() {
         return status;
     }
+/*submit the inputs and wait the output
 
+creates new panel for new role in the organization
 
+data to be defined.
+
+data passed in the function.
+
+*/
     public void setStatus(String status) {
         this.status = status;
     }
@@ -93,9 +144,15 @@ public class WorkRequest {
     public void setRequestDate(Date requestDate) {
         this.requestDate = requestDate;
     }
+/*submit the inputs and wait the output
 
+creates new panel for new role in the organization
 
+data to be defined.
 
+data passed in the function.
+
+*/
     public Date getResolveDate() {
         return resolveDate;
     }
@@ -108,6 +165,14 @@ public class WorkRequest {
     public String toString()
     {
         return message;
-    }    
-    
+    }
+    /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
 }

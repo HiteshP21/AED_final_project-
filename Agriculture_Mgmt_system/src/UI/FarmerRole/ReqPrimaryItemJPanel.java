@@ -25,7 +25,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Hitesh
+ * @author shantanu
  */
 public class ReqPrimaryItemJPanel extends javax.swing.JPanel {
 
@@ -70,7 +70,7 @@ public class ReqPrimaryItemJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        requestTestJButton.setBackground(new java.awt.Color(153, 255, 153));
+        requestTestJButton.setBackground(new java.awt.Color(255, 102, 102));
         requestTestJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         requestTestJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMsubmit.png"))); // NOI18N
         requestTestJButton.setText("Submit Request");
@@ -84,8 +84,7 @@ public class ReqPrimaryItemJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMraw_material.jpg"))); // NOI18N
         jLabel1.setText("Raw Material");
-        jLabel1.setOpaque(true);
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, 110, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, 166, -1));
 
         messageJTextField.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         messageJTextField.addActionListener(new java.awt.event.ActionListener() {
@@ -112,15 +111,14 @@ public class ReqPrimaryItemJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 670, 120, 50));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 50));
 
         valueLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, 250, 30));
 
-        enterpriseLabel.setBackground(new java.awt.Color(153, 255, 153));
         enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 120, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 120, 30));
 
         rmCoboBox.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         rmCoboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -139,10 +137,9 @@ public class ReqPrimaryItemJPanel extends javax.swing.JPanel {
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMqantity.jpg"))); // NOI18N
         jLabel3.setText("Quantity");
-        jLabel3.setOpaque(true);
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 80, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 166, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UISystemAdminWorkArea.jpeg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMwallpaper1.jpg"))); // NOI18N
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 1000, 810));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -153,6 +150,15 @@ public class ReqPrimaryItemJPanel extends javax.swing.JPanel {
         if (messageJTextField.getText().equals(""))
         {
          
+            /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
             JOptionPane.showMessageDialog(null,"Please mention the quantity before proceeding");
         }
         else
@@ -190,6 +196,15 @@ public class ReqPrimaryItemJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout)userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
         
+        /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
         
     }//GEN-LAST:event_backJButtonActionPerformed
 

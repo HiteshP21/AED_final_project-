@@ -87,12 +87,12 @@ public class DistributorWorkAreaJPanel extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 127, 30));
+        enterpriseLabel.setText("EnterPrise :");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 127, 30));
 
         valLbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         add(valLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 208, 30));
@@ -134,7 +134,6 @@ public class DistributorWorkAreaJPanel extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("Raw Material Request");
-        jLabel1.setOpaque(true);
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, -1));
 
         FrwdFarmerBTN.setBackground(new java.awt.Color(255, 102, 102));
@@ -158,15 +157,15 @@ public class DistributorWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(FrwdToWarehouseBRN, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, 300, -1));
 
-        jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMcustomer.jpg"))); // NOI18N
         jLabel2.setText("Distributor");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 300, 60));
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UIDistributorRole.JPG"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 980, 760));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CM_Warehouse.jpg"))); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 980, 640));
     }// </editor-fold>//GEN-END:initComponents
 
     private void FrwdFarmerBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FrwdFarmerBTNActionPerformed

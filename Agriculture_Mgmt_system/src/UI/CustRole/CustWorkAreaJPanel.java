@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author shantanu
+ * @author shardul
  */
 public class CustWorkAreaJPanel extends javax.swing.JPanel {
 
@@ -30,12 +30,12 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
     private UserAccount userAccount;
     private FoodDeptEnt enterprise;
     private YieldReviewDir prDirectory;
-     private ButtonGroup qualitybg = new ButtonGroup();
+    private ButtonGroup qualitybg = new ButtonGroup();
     private ButtonGroup shelfbg = new ButtonGroup();
     /**
      * Creates new form CustomerWorkAreaJPanel
      */
-    public CustWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, OrgCust organization, Enterprise enterprise,YieldReviewDir prDirectory) {
+   public CustWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, OrgCust organization, Enterprise enterprise,YieldReviewDir prDirectory) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;
@@ -46,7 +46,7 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
         valLbl.setText(enterprise.getName());
         populateRequestTable();
         qualitygroupbutton();
-         shelfgroupbutton();
+        shelfgroupbutton();
         //checkCompletion();
     }
      private void qualitygroupbutton() {
@@ -152,20 +152,20 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 620, 165));
 
-        reqTestJBtn.setBackground(new java.awt.Color(112, 61, 19));
+        reqTestJBtn.setBackground(new java.awt.Color(255, 102, 102));
         reqTestJBtn.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        reqTestJBtn.setForeground(new java.awt.Color(255, 255, 255));
+        reqTestJBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMcrop.jpg"))); // NOI18N
         reqTestJBtn.setText("Request Yield");
         reqTestJBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reqTestJBtnActionPerformed(evt);
             }
         });
-        add(reqTestJBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 220, 60));
+        add(reqTestJBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 260, 220, 60));
 
         enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 127, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 127, 30));
 
         valLbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         add(valLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 158, 26));
@@ -177,25 +177,18 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 480, 507, 70));
 
-        jLabel3.setBackground(new java.awt.Color(204, 102, 0));
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel3.setText("Additional Reviews");
-        jLabel3.setOpaque(true);
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 480, 150, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 480, 180, -1));
 
-        jLabel4.setBackground(new java.awt.Color(204, 102, 0));
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel4.setText("Produce Shelf Life");
-        jLabel4.setOpaque(true);
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 440, 150, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 440, 180, -1));
 
-        jLabel2.setBackground(new java.awt.Color(204, 102, 0));
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel2.setText("Produce Quality");
-        jLabel2.setOpaque(true);
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 150, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 180, -1));
 
-        wertRadioButton.setBackground(new java.awt.Color(204, 102, 0));
         wertRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         wertRadioButton.setText("Excellent");
         wertRadioButton.setEnabled(false);
@@ -206,7 +199,6 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(wertRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, -1, -1));
 
-        sleRDBTN.setBackground(new java.awt.Color(204, 102, 0));
         sleRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         sleRDBTN.setText("Excellent");
         sleRDBTN.setEnabled(false);
@@ -217,13 +209,11 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(sleRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 440, -1, -1));
 
-        svgRDBTN.setBackground(new java.awt.Color(204, 102, 0));
         svgRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         svgRDBTN.setText("Very Good");
         svgRDBTN.setEnabled(false);
         add(svgRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 440, -1, -1));
 
-        qvgRadioButton.setBackground(new java.awt.Color(204, 102, 0));
         qvgRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         qvgRadioButton.setText("Very Good");
         qvgRadioButton.setEnabled(false);
@@ -234,61 +224,56 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(qvgRadioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 400, -1, -1));
 
-        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMreview_crop.png"))); // NOI18N
         jLabel1.setText("Review Crop");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 350, 198, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 340, 198, -1));
 
-        qgRDBTN.setBackground(new java.awt.Color(204, 102, 0));
         qgRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         qgRDBTN.setText("Good");
         qgRDBTN.setEnabled(false);
         add(qgRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 400, -1, -1));
 
-        qaRDBTN.setBackground(new java.awt.Color(204, 102, 0));
         qaRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         qaRDBTN.setText("Average");
         qaRDBTN.setEnabled(false);
         add(qaRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 400, -1, -1));
 
-        saRDBTN.setBackground(new java.awt.Color(204, 102, 0));
         saRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         saRDBTN.setText("Average");
         saRDBTN.setEnabled(false);
         add(saRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 440, -1, -1));
 
-        sgRDBTN.setBackground(new java.awt.Color(204, 102, 0));
         sgRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         sgRDBTN.setText("Good");
         sgRDBTN.setEnabled(false);
         add(sgRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 440, -1, -1));
 
-        spRDBTN.setBackground(new java.awt.Color(204, 102, 0));
         spRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         spRDBTN.setText("Poor");
         spRDBTN.setEnabled(false);
         add(spRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 440, -1, -1));
 
-        qpRDBTN.setBackground(new java.awt.Color(204, 102, 0));
         qpRDBTN.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         qpRDBTN.setText("Poor");
         qpRDBTN.setEnabled(false);
         add(qpRDBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 400, -1, -1));
 
-        revBTN.setBackground(new java.awt.Color(112, 61, 19));
+        revBTN.setBackground(new java.awt.Color(255, 153, 102));
         revBTN.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        revBTN.setForeground(new java.awt.Color(255, 255, 255));
+        revBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMcrop.jpg"))); // NOI18N
         revBTN.setText("Review Yield");
         revBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 revBTNActionPerformed(evt);
             }
         });
-        add(revBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 190, 60));
+        add(revBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, 190, 60));
 
-        submitButton.setBackground(new java.awt.Color(204, 102, 0));
+        submitButton.setBackground(new java.awt.Color(255, 102, 102));
         submitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        submitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMsubmit.png"))); // NOI18N
         submitButton.setText("Submit");
         submitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -299,10 +284,11 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMcustomer.jpg"))); // NOI18N
         jLabel5.setText("Customer ");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 334, -1));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UICustRole.jpg"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMwallpaper2.jpg"))); // NOI18N
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 1000, 800));
     }// </editor-fold>//GEN-END:initComponents
     private void checkCompletion() {
@@ -371,6 +357,7 @@ public class CustWorkAreaJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_revBTNActionPerformed
 
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
+                                            
         // TODO add your handling code here:
         
         int selectedRow = wrkReqJTab.getSelectedRow();

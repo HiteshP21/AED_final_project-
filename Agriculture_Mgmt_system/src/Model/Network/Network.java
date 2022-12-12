@@ -13,7 +13,7 @@ import Model.Enterprise.EnterpriseDir;
  */
 public class Network {
     private String name;
-    private EnterpriseDir enterpriseDirectory; //Mapping network w.r.t to enterprise
+    private EnterpriseDir enterpriseDirectory;
     
     public Network(){
         enterpriseDirectory=new EnterpriseDir();

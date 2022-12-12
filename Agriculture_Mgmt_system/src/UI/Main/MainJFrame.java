@@ -1,8 +1,17 @@
 
 package UI.Main;
 
+import Model.PrimaryItem.PrimaryItemsDir;
 import Model.DB4OUtil.DB4OUtil;
-
+import Model.EcoSys;
+import Model.Enterprise.Enterprise;
+import Model.Network.Network;
+import Model.Organization.Organization;
+import Model.Yield.Yield;
+import Model.Yield.YieldDir;
+import Model.YieldReview.YieldReviewDir;
+import Model.PrimaryItemReview.PrimaryItemReviewDir;
+import Model.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -12,12 +21,39 @@ import javax.swing.JPanel;
  * @author Hitesh
  */
 public class MainJFrame extends javax.swing.JFrame {
+
+    private EcoSys system;
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
+    YieldDir yieldDir1;
+    PrimaryItemsDir piDir;
+    YieldReviewDir yieldDir;
+    PrimaryItemReviewDir primItemReviewDir;
     
     public MainJFrame() {
         
         initComponents();
         
+        //Setting up the system
+        system = dB4OUtil.retrieveSystem();
+        this.yieldDir1 = system.getYieldDir();
+        this.piDir = system.getRmDir();
+        this.yieldDir = system.getYieldReviewDir();
+        this.primItemReviewDir = system.getRmReviewDir();
+        System.out.println(this.yieldDir);
+        
+           /**
+     * 
+     * /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
+        System.out.println(this.primItemReviewDir);
+        this.setSize(1300, 1000);
     }
 
     /**
@@ -47,20 +83,22 @@ public class MainJFrame extends javax.swing.JFrame {
 
         splitPane.setDividerLocation(200);
 
-        loginPanel.setBackground(new java.awt.Color(255, 255, 255));
+        loginPanel.setBackground(new java.awt.Color(255, 255, 204));
 
         jLabel1.setBackground(new java.awt.Color(255, 153, 255));
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMuser.png"))); // NOI18N
         jLabel1.setText("User Name");
 
         userNameJTextField.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMkey.png"))); // NOI18N
         jLabel2.setText("Password");
 
         passwordField.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
 
-        loginJButton.setBackground(new java.awt.Color(102, 255, 102));
+        loginJButton.setBackground(new java.awt.Color(255, 204, 255));
         loginJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         loginJButton.setText("Login");
         loginJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -127,16 +165,16 @@ public class MainJFrame extends javax.swing.JFrame {
         container.setBackground(new java.awt.Color(255, 255, 204));
         container.setLayout(new java.awt.CardLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel3.setText("Mixed Agriculture Management System");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 670, -1));
+        jLabel3.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel3.setText("Crop Management System");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/MainJFrame.jpg"))); // NOI18N
-        jLabel4.setText("jLabel4");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1120, 880));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMcrop_main.jpg"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, 1030, 710));
 
         container.add(jPanel1, "card2");
 
@@ -154,12 +192,159 @@ public class MainJFrame extends javax.swing.JFrame {
         char[] passwordCharArray = passwordField.getPassword();
         String password = String.valueOf(passwordCharArray);
 
-          
+        //Step1: Check in the system admin user account directory if you have the user
+        UserAccount userAccount=system.getUserAccountDir().authenticateUser(userName, password);
+
+        Enterprise inEnterprise=null;
+        Organization inOrganization=null;
+  
+        /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
+        if(userAccount==null){
+            
+               /**
+     * 
+     * /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
+            //Step 2: Go inside each network and check each enterprise
+            for(Network network:system.getNetworkList()){
+                //Step 2.a: check against each enterprise
+                for(Enterprise enterprise:network.getEnterpriseDirectory().getEnterpriseList()){
+                    /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
+                    userAccount=enterprise.getUserAccountDir().authenticateUser(userName, password);
+                    System.out.println(userAccount);
+                    /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
+                    System.out.println(network.getEnterpriseDirectory().getEnterpriseList());
+                    if(userAccount==null){
+                        /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
+                        //Step 3:check against each organization for each enterprise
+                        for(Organization organization:enterprise.getOrganizationDirectory().getOrganizationList()){
+                           
+                            /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
+                            userAccount=organization.getUserAccountDir().authenticateUser(userName, password);
+                            if(userAccount!=null){
+                                inEnterprise=enterprise;
+                                inOrganization=organization;
+                               
+                                break;
+                            }
+                        }
+
+                    }
+                    /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
+                    else{
+                        inEnterprise=enterprise;
+                        break;
+                    }
+                    if(inOrganization!=null){
+                        break;
+                    }
+                }
+                /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
+                if(inEnterprise!=null){
+                    break;
+                }
+            }
+        }
+        
+           /**
+     * 
+     * /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
+
+        if(userAccount==null){
+            JOptionPane.showMessageDialog(null, "Invalid credentials");
+            return;
+        }
+        else{
+            CardLayout layout=(CardLayout)container.getLayout();
+            
+            container.add("workArea",userAccount.getRole().createWorkArea(container, userAccount, inOrganization, inEnterprise, system,yieldDir1,piDir,yieldDir,primItemReviewDir));
+            layout.next(container);
+        }
+
         loginJButton.setEnabled(false);
         logoutJButton.setEnabled(true);
         userNameJTextField.setEnabled(false);
         
+        /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
         passwordField.setEnabled(false);
     }//GEN-LAST:event_loginJButtonActionPerformed
 
@@ -175,10 +360,19 @@ public class MainJFrame extends javax.swing.JFrame {
         container.removeAll();
         JPanel blankJP = new JPanel();
         
+        /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
         container.add("blank", blankJP);
         CardLayout crdLyt = (CardLayout) container.getLayout();
         crdLyt.next(container);
+        dB4OUtil.storeSystem(system);
     }//GEN-LAST:event_logoutJButtonActionPerformed
 
     private void ShowPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShowPasswordActionPerformed
@@ -219,13 +413,19 @@ public class MainJFrame extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
                 new MainJFrame().setVisible(true);
             }
         });

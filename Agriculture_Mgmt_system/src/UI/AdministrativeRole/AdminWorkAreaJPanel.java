@@ -63,46 +63,45 @@ data passed in the function.
         jLabel1423.setText(" Enterprise Administrator");
         add(jLabel1423, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, 570, 70));
 
+        userJButton.setBackground(new java.awt.Color(51, 255, 255));
         userJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        userJButton.setForeground(new java.awt.Color(0, 0, 255));
         userJButton.setText("Manage Users");
         userJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 userJButtonActionPerformed(evt);
             }
         });
-        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, 300, 60));
+        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 300, 30));
 
+        mngeEmpJButton.setBackground(new java.awt.Color(153, 51, 255));
         mngeEmpJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        mngeEmpJButton.setForeground(new java.awt.Color(0, 0, 255));
         mngeEmpJButton.setText("Manage Employees");
         mngeEmpJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mngeEmpJButtonActionPerformed(evt);
             }
         });
-        add(mngeEmpJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 230, 300, 60));
+        add(mngeEmpJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 300, -1));
 
+        mngeOrgJButton.setBackground(new java.awt.Color(153, 255, 153));
         mngeOrgJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        mngeOrgJButton.setForeground(new java.awt.Color(0, 0, 255));
         mngeOrgJButton.setText("Manage Organization");
         mngeOrgJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mngeOrgJButtonActionPerformed(evt);
             }
         });
-        add(mngeOrgJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 150, 300, 60));
+        add(mngeOrgJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 300, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 110, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 120, 30));
 
         valLbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         add(valLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 150, 20));
 
         jLabel1.setBackground(new java.awt.Color(204, 102, 0));
         jLabel1.setForeground(new java.awt.Color(255, 51, 204));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UIAdministrativeRole.jpg"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 800));
     }// </editor-fold>//GEN-END:initComponents
 

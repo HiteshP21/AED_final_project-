@@ -6,14 +6,22 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Hitesh
+ * @author shardul
  */
 public class ProducerEnt extends Enterprise {
     
      public ProducerEnt(String name){
         super(name,Enterprise.EnterpriseType.Producer);
     }
+     /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     @Override
     public ArrayList<Role> getSupportedRole() {
         return null;

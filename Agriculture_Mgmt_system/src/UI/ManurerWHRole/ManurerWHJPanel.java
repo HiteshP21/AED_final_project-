@@ -16,7 +16,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Hitesh
+ * @author shardul
  */
 public class ManurerWHJPanel extends javax.swing.JPanel {
 

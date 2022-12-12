@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Hitesh
+ * @author shardul
  */
 public class AdministerEnterpriseAdminJPanel extends javax.swing.JPanel {
 
@@ -84,6 +84,17 @@ data passed in the function.
         }
     }
     
+       /**
+     * 
+     * /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     
     private void populateEnterpriseComboBox(Network network){
         enterpriseJComboBox.removeAllItems();
@@ -94,7 +105,17 @@ data passed in the function.
         
     }
     
+       /**
+     * 
+     * /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -149,8 +170,7 @@ data passed in the function.
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMmanage_emp.png"))); // NOI18N
         jLabel1.setText("Network");
-        jLabel1.setOpaque(true);
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 80, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 170, -1));
 
         networkJComboBox.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         networkJComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -163,8 +183,7 @@ data passed in the function.
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMuser.png"))); // NOI18N
         jLabel2.setText("Username");
-        jLabel2.setOpaque(true);
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, 90, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, 150, -1));
 
         usernameJTextField.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         usernameJTextField.addActionListener(new java.awt.event.ActionListener() {
@@ -177,8 +196,7 @@ data passed in the function.
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMbuilding.jpg"))); // NOI18N
         jLabel3.setText("Enterprise");
-        jLabel3.setOpaque(true);
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, 80, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 140, -1));
 
         enterpriseJComboBox.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         enterpriseJComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -188,7 +206,7 @@ data passed in the function.
         });
         add(enterpriseJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 230, -1));
 
-        submitJButton.setBackground(new java.awt.Color(153, 255, 153));
+        submitJButton.setBackground(new java.awt.Color(255, 102, 102));
         submitJButton.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         submitJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMsubmit.png"))); // NOI18N
         submitJButton.setText("Submit");
@@ -197,13 +215,12 @@ data passed in the function.
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 530, 200, 50));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 530, 200, -1));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMkey.png"))); // NOI18N
         jLabel4.setText("Password");
-        jLabel4.setOpaque(true);
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 360, 90, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, 150, -1));
 
         nameJTextField.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 430, 230, -1));
@@ -229,7 +246,7 @@ data passed in the function.
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 700, 120, 50));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 50));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -237,7 +254,7 @@ data passed in the function.
         jLabel6.setText("Manage Enterprise Admin");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 400, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UISystemAdminWorkArea.jpeg"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMcorporate1.jpg"))); // NOI18N
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 800));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -249,7 +266,17 @@ data passed in the function.
             populateEnterpriseComboBox(network);
         }
         
+           /**
+     * 
+     * /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
         
         
     }//GEN-LAST:event_networkJComboBoxActionPerformed

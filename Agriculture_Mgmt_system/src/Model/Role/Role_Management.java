@@ -16,14 +16,14 @@ import UI.ManagementRole.ManagementWorkAreaJPanel;
 
 /**
  *
- * @author shardul
+ * @author Hitesh
  */
 public class Role_Management extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business,YieldDir produceDirectory, PrimaryItemsDir rmDirectory,YieldReviewDir prDirectory,PrimaryItemReviewDir rmrDirectory) {
 
-        return new ManagementWorkAreaJPanel(userProcessContainer, account,(OrgManagement)organization, (FoodDeptEnt)enterprise,business, produceDirectory,prDirectory,rmrDirectory);
+        return new ManagementWorkAreaJPanel(userProcessContainer, account,(OrgManagement)organization, enterprise,business, produceDirectory,prDirectory,rmrDirectory);
 
     }
     

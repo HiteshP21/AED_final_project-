@@ -24,7 +24,7 @@ import javax.swing.Timer;
 
 /**
  *
- * @author Hitesh
+ * @author shantanu
  */
 public class FarmingAssistanceJPanel extends javax.swing.JPanel {
 
@@ -83,17 +83,14 @@ public class FarmingAssistanceJPanel extends javax.swing.JPanel {
 
         jLlb4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLlb4.setText("Current Day");
-        jLlb4.setOpaque(true);
         add(jLlb4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, -1, -1));
 
         jLbl5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLbl5.setText("Tomorrow");
-        jLbl5.setOpaque(true);
         add(jLbl5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 80, -1, -1));
 
         jLbl6.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLbl6.setText("Day After");
-        jLbl6.setOpaque(true);
         add(jLbl6, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 80, -1, -1));
 
         tomoPlusOne_ClimTxt.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -119,7 +116,7 @@ public class FarmingAssistanceJPanel extends javax.swing.JPanel {
         add(jLbl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 170, 150));
         add(jLbl3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 200, 170, 150));
 
-        chkClimate.setBackground(new java.awt.Color(153, 255, 153));
+        chkClimate.setBackground(new java.awt.Color(255, 102, 102));
         chkClimate.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         chkClimate.setText("Request Weather");
         chkClimate.addActionListener(new java.awt.event.ActionListener() {
@@ -157,7 +154,7 @@ public class FarmingAssistanceJPanel extends javax.swing.JPanel {
                 backActionPerformed(evt);
             }
         });
-        add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 550, 190, 50));
+        add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 50));
 
         todayMax.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         add(todayMax, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, 110, -1));
@@ -170,38 +167,32 @@ public class FarmingAssistanceJPanel extends javax.swing.JPanel {
 
         jLbl7.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLbl7.setText("Low");
-        jLbl7.setOpaque(true);
         add(jLbl7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, -1, -1));
 
         jLbl28.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLbl28.setText("High");
-        jLbl28.setOpaque(true);
         add(jLbl28, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, -1, -1));
 
         jLbl39.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLbl39.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLbl39.setText("Advisory");
         jLbl39.setToolTipText("");
-        jLbl39.setOpaque(true);
-        add(jLbl39, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 380, 80, -1));
+        add(jLbl39, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 400, 100, -1));
 
         jLbl10.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLbl10.setText("Select Fruit");
-        jLbl10.setOpaque(true);
-        add(jLbl10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, 90, 20));
+        add(jLbl10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 400, 90, 20));
 
         jLbl11.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLbl11.setText("Place");
-        jLbl11.setOpaque(true);
-        add(jLbl11, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, 40, -1));
+        add(jLbl11, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, 110, -1));
 
         jLbl13.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLbl13.setText("Farming Assistance");
         add(jLbl13, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 0, 240, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMwallpaper2.jpg"))); // NOI18N
-        jLabel1.setOpaque(true);
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -6, 1000, 790));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -6, 1000, 670));
     }// </editor-fold>//GEN-END:initComponents
 
     private void now_ClimTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_now_ClimTxtActionPerformed
@@ -231,6 +222,15 @@ public class FarmingAssistanceJPanel extends javax.swing.JPanel {
 
             }
             
+            /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
             rd.close();
             System.out.println(result);
             Map<String, Object> respMap = jsonToMap(result.toString());
@@ -252,6 +252,15 @@ public class FarmingAssistanceJPanel extends javax.swing.JPanel {
             double rnd2 = Math.random()*7;
             double rnd3 = Math.random()*5;
             
+            /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
             
             
             //Calculation

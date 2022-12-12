@@ -19,7 +19,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author shantanu
+ * @author shardul
  */
 public class ReqYieldJPanel extends javax.swing.JPanel {
 
@@ -68,11 +68,12 @@ data passed in the function.
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(112, 61, 19));
+        setBackground(new java.awt.Color(255, 255, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        reqBtn.setBackground(new java.awt.Color(112, 61, 19));
+        reqBtn.setBackground(new java.awt.Color(255, 102, 102));
         reqBtn.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        reqBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMcrop.jpg"))); // NOI18N
         reqBtn.setText("Request Produce");
         reqBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,14 +89,16 @@ data passed in the function.
         msgTextFld.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         add(msgTextFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 229, -1));
 
+        bkBtn.setBackground(new java.awt.Color(204, 255, 204));
         bkBtn.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        bkBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMback.png"))); // NOI18N
         bkBtn.setText("Back");
         bkBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bkBtnActionPerformed(evt);
             }
         });
-        add(bkBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 670, 100, 50));
+        add(bkBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 50));
 
         valLBL.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         add(valLBL, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 200, 30));
@@ -126,11 +129,11 @@ data passed in the function.
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMcrop.jpg"))); // NOI18N
         jLabel3.setText("Request Yield");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, 320, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UICustRole.jpg"))); // NOI18N
-        jLabel4.setAutoscrolls(true);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMwallpaper2.jpg"))); // NOI18N
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 950, 810));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -187,7 +190,7 @@ data passed in the function.
             org.getWorkQueue().getWorkRequestList().add(request);
             userAccount.getWorkQueue().getWorkRequestList().add(request);
         }
-        JOptionPane.showMessageDialog(null,"Request has been forwarded successfully");
+        JOptionPane.showMessageDialog(null,"Request has been forwarded to supplier");
         }
         }
         msgTextFld.setText("");
