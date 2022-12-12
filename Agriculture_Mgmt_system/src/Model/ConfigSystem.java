@@ -18,7 +18,7 @@ public class ConfigSystem {
     public static EcoSys configure(){
         
         EcoSys sys = EcoSys.getInstance();
-        Emp employee = sys.getEmpDir().createEmp("Shardul");       //Creating a root user
+        Emp employee = sys.getEmpDir().createEmp("Kunal");       //Creating a root user
         
         UserAccount ua = sys.getUserAccountDir().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
         

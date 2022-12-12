@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author shardul
+ * @author Hitesh
  */
 public class PrimaryItemsDir {
     
@@ -22,10 +22,9 @@ creates new panel for new role in the organization
 
 data to be defined.
 
-data passed in the function. 
+data passed in the function.
 
 */
-    //create
     //Declaring the singleton instance for rawmaterial directory
     public static PrimaryItemsDir getInst()
     {

@@ -71,11 +71,11 @@ data passed in the function.
                 SBTJButtonActionPerformed(evt);
             }
         });
-        add(SBTJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 220, -1, -1));
+        add(SBTJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 180, -1, -1));
 
         jLabel121.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel121.setText("Produce Result");
-        add(jLabel121, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, 140, 40));
+        add(jLabel121, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 120, 140, 40));
 
         bkJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         bkJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMback.png"))); // NOI18N
@@ -85,7 +85,7 @@ data passed in the function.
                 bkJButtonActionPerformed(evt);
             }
         });
-        add(bkJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 690, 140, 50));
+        add(bkJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 50));
 
         rsltComboBox.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         add(rsltComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 130, 248, -1));
@@ -96,8 +96,8 @@ data passed in the function.
         jLabel223.setText("Produce Request Result");
         add(jLabel223, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 375, 70));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UIWHManagerRole.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-790, 0, 2500, 810));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMwallpaper2.jpg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 810));
     }// </editor-fold>//GEN-END:initComponents
     
     private void bkJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bkJButtonActionPerformed

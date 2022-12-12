@@ -26,7 +26,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Hitesh
+ * @author shardul
  */
 public class ReqProdJPanel extends javax.swing.JPanel {
     

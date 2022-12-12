@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Hitesh
+ * @author shardul
  */
 public class ManurerProducerJPanel extends javax.swing.JPanel {
 

@@ -12,7 +12,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author shardul
+ * @author Hitesh
  */
 public class AdministerEnterpriseJPanel extends javax.swing.JPanel {
 
@@ -116,7 +116,7 @@ data passed in the function.
         jLabel445 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         enterpriseJTable.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -142,7 +142,6 @@ data passed in the function.
 
         jLabel144.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel144.setText("Network");
-        jLabel144.setOpaque(true);
         add(jLabel144, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, -1, 30));
 
         ntwrkJComboBox.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -151,7 +150,6 @@ data passed in the function.
 
         jLabel245.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel245.setText("Enterprise Name");
-        jLabel245.setOpaque(true);
         add(jLabel245, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 482, -1, 30));
 
         nameText.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -159,15 +157,15 @@ data passed in the function.
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel3.setText("Enterprise Type");
-        jLabel3.setOpaque(true);
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 420, -1, 30));
 
         enterpriseTypeJComboBox.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         enterpriseTypeJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         add(enterpriseTypeJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(418, 420, 370, -1));
 
-        SBTJButton.setBackground(new java.awt.Color(153, 255, 153));
+        SBTJButton.setBackground(new java.awt.Color(255, 102, 102));
         SBTJButton.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        SBTJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMsubmit.png"))); // NOI18N
         SBTJButton.setText("Submit");
         SBTJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,22 +175,23 @@ data passed in the function.
         add(SBTJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 540, 218, -1));
 
         bkJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        bkJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMback.png"))); // NOI18N
         bkJButton.setText("Back");
-        bkJButton.setOpaque(true);
         bkJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bkJButtonActionPerformed(evt);
             }
         });
-        add(bkJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 690, 130, 50));
+        add(bkJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 50));
 
         jLabel445.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel445.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel445.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMbuilding.jpg"))); // NOI18N
         jLabel445.setText("Manage Enterprise");
         add(jLabel445, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 380, 59));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/UISystemAdminWorkArea.jpeg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1000, 800));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CMcorporate1.jpg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 800));
     }// </editor-fold>//GEN-END:initComponents
 
     private void SBTJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SBTJButtonActionPerformed

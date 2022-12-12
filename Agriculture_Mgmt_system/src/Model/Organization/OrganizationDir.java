@@ -32,15 +32,6 @@ data passed in the function.
     public ArrayList<Organization> getOrganizationList() {
         return organizationList;
     }
-    /*submit the inputs and wait the output
-
-creates new panel for new role in the organization
-
-data to be defined.
-
-data passed in the function.
-
-*/
     public Organization createOrganization(Type type){
         Organization organization = null;
         
@@ -59,6 +50,11 @@ data passed in the function.
             organizationList.add(organization);
         }
         
+        else if (type.getValue().equals(Type.StorewarehouseManager.getValue())){
+            organization = new OrgStoreWH();
+            organizationList.add(organization);
+        }                
+                
          else if (type.getValue().equals(Type.Warehouse.getValue())){
             organization = new OrgWH();
             organizationList.add(organization);
@@ -67,15 +63,7 @@ data passed in the function.
             organization = new OrgProduction();
             organizationList.add(organization);
         }
-        /*submit the inputs and wait the output
 
-creates new panel for new role in the organization
-
-data to be defined.
-
-data passed in the function.
-
-*/
         else if (type.getValue().equals(Type.ManufacturerSupplier.getValue())){
             organization = new OrgProducerDistributor();
             organizationList.add(organization);
@@ -84,15 +72,7 @@ data passed in the function.
             organization = new OrgManagement();
             organizationList.add(organization);
         }
-         /*submit the inputs and wait the output
 
-creates new panel for new role in the organization
-
-data to be defined.
-
-data passed in the function.
-
-*/
          else if (type.getValue().equals(Type.ManufacturerWarehouse.getValue())){
             organization = new OrgProducerWH();
             organizationList.add(organization);

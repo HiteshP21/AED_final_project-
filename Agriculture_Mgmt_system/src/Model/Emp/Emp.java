@@ -1,18 +1,28 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Model.Emp;
 
 /**
  *
- * @author Hitesh
+ * @author shardul
  */
 public class Emp {
-        private String name;
+    
+    private String name;
     private int id;
     private static int count = 1;
+/*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     public Emp() {
         id = count;
         count++;
@@ -31,7 +41,15 @@ public class Emp {
         return name;
     }
     
+    /*submit the inputs and wait the output
 
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/
     //Override method to get string of an object
     @Override
     public String toString() {

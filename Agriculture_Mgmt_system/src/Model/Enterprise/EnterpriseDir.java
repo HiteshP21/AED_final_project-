@@ -49,6 +49,14 @@ data passed in the function.
 */
             System.out.println("List has added"+enterpriseList);
         }
+        
+        else if(type==Enterprise.EnterpriseType.SuperMart){
+            enterprise=new SMartEnt(name);
+            enterpriseList.add(enterprise);
+            
+            System.out.println("List has added"+enterpriseList);
+        }        
+        
         else if(type==Enterprise.EnterpriseType.Producer){
             enterprise=new ProducerEnt(name);
             enterpriseList.add(enterprise);

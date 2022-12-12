@@ -17,7 +17,7 @@ import UI.CustRole.CustWorkAreaJPanel;
 
 /**
  *
- * @author Hitesh
+ * @author shantanu
  */
 public class Role_Cust extends Role {
     @Override

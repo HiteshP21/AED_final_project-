@@ -8,13 +8,21 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Hitesh
+ * @author shardul
  */
 public class OrgCust extends Organization {
      public OrgCust(){
         super(Type.Customer.getValue());
     }
-  
+  /*submit the inputs and wait the output
+
+creates new panel for new role in the organization
+
+data to be defined.
+
+data passed in the function.
+
+*/  
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
